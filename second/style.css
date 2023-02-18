@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    min-height: 100vh;
+    width: 100%;
+
+}
+#top{
+    
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("https://images.unsplash.com/photo-1628279582754-10ed8b4462cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80");
+    background-size: cover;
+    background-position: 50% 40%;
+}
+
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+
+
+#text{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    bottom: 18%;
+    width: 100%;
+    padding: 0 10vw;
+}
+
+#text h1{
+    font-size: 5vw;
+    color: white;
+    font-weight: 600;
+}
+
+#textright{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textright p{
+    font-size:12px ;
+    width: 30%;
+    color: white;
+    opacity: .6;
+}
+#textright #icon{
+    font-size: 19px;
+    padding: 20px;
+}
+#load{
+    position: absolute;
+    bottom: 8%;
+    padding: 0 10vw;
+}
+#load i{
+    color: white;
+    opacity: .6;
+}
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+#one{
+    width: 25%;
+    min-height: inherit;
+    background-color:white;
+    padding: 30px;
+
+}
+#one p{
+    font-size:12px;
+    margin-top: 20px;
+}
+#two{
+    width: 25%;
+    min-height: inherit;
+    background-image: url("https://images.unsplash.com/photo-1560500314-5bb644b05be5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+    background-size: cover;
+    background-position: top;
+}
+#three{
+    width: 20%;
+    min-height: inherit;
+}
+.three_1{
+    padding: 20px;
+    width: 100%;
+    min-height:20vh ;
+    background-color: rgb(170, 112, 3);
+    color: white;
+}
+.three_1 p{
+    margin-top: 10px;;
+    font-size:12px ;
+}
+.three_2{
+    width: 100%;
+   min-height: 20vh;
+    background-image: url("https://images.unsplash.com/photo-1597442086927-737cf674e4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=959&q=80");
+background-size: cover;
+background-position: center;}
+#four{
+    width: 30%;
+    min-height: inherit;
+    background-color: rgb(52, 50, 50);
+    color: white;
+    padding: 30px;
+}
+
+.notf{
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;}
+
+.notf #photo{
+    background-image: url("https://images.unsplash.com/photo-1525428020182-b3da25c7ae7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    background-position: top;
+    background-size: cover;
+}
+.notf p{
+    width: 86%;
+    font-size: 13px;
+}
+
+@media(max-width:500px) {
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text  h1{
+        font-size: 10vw;
+        padding-left: 30px;
+    }
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright #icon{
+       color:white;
+        width: initial;
+        margin-top: 2px;
+    padding-left: 1px;    }
+    
+    #bottom{
+        flex-direction: column;
+        min-height: 20vh;
+
+    }
+    #one{
+        width: 100%; 
+    }
+    
+    #two{
+        width: 100%;
+    }
+    
+    #three{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #four{
+        width: 100%;
+    }
+
+    .three_2{
+        background-image: url("https://images.unsplash.com/photo-1560500314-5bb644b05be5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+        background-size: cover;
+background-position:bottom;
+    }
+
+}
